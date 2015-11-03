@@ -1,0 +1,337 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
+
+@import "variables";
+@import "reset";
+@import "fontawesome";
+
+/* sass goes here */
+
+// ----------- COLOR ------------
+
+$lightgrey: #F5F5F5;
+$blue: #3CADD4;
+$purple: #383B43;
+
+// ----------- GLOBAL STYLE ----------
+
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+}
+
+section {
+	padding: 5em 0 5.5em;
+}
+
+span {
+	display: block;
+	font-size: 1.44em;
+	color: grey;
+}
+
+button {
+	border: none;
+	border-radius: 2em;
+	padding: .78em 1.9em;
+	color: white;
+	font-size: 1.3em;
+	background-color: $blue;
+}
+
+h2 {
+	font-size: 2.75em;
+	margin: .3em 0;
+	color: black;
+}
+
+p {
+	font-size: .94em;
+}
+
+// ------------ HEADER NAV --------------
+
+header {
+	height: 100%;
+	background: linear-gradient( rgba(0, 0, 5, .7), rgba(0, 0, 5, .7) ), url(http://templated.co/items/demos/transit/images/bokeh_car_lights_bg.jpg);
+	background-position: center;
+	background-size: cover;
+	color: white;
+	opacity: 0.88;
+	text-align: center;
+}
+
+header nav {
+	padding: 2.5em;
+}
+
+header ul {
+	display: flex;
+	padding: .2em .5em;
+}
+
+header ul > li:nth-of-type(1) {
+	margin-left: auto;
+}
+
+header ul > li {
+	margin-left: 2.4em;
+}
+
+header a {
+	color: white;
+}
+
+header ul > a:first-of-type {
+	font-weight: 900;
+	font-size: 1.1em;
+}
+
+#signup {
+	padding: .5em 1em;
+	background-color: white;
+	color: grey;
+	border-radius: 10em;
+}
+
+header h1 {
+	font-size: 3.6em;
+	margin: 1.8em 0 .5em;
+}
+
+header span {
+	color: white;
+	margin-bottom: 2em;
+}
+
+header button {
+	transition: .4s ease-in-out;
+	outline: none;
+	cursor: pointer;
+}
+
+// -------------- FIRST SECTION -------------
+
+#first-section {
+	border-bottom: 1px solid lightgrey;
+	background-color: $lightgrey;
+	color: grey;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#first-section span {
+	margin-bottom: 2.5em;
+}
+
+#first-section aside {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+}
+
+#first-section div {
+	text-align: center;
+	padding: 2.8em 2em 1.8em;
+	margin: 0 1.5em;
+	border-radius: 3px;
+	box-shadow: 0 0 1px grey;
+	background-color: white;
+
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#first-section div i {
+	width: 3.1em;
+	height: 3.1em;
+	border-radius: 10em;
+	font-size: 2.4em;
+	line-height: 3.1em;
+	margin-bottom: .6em;
+	color: white;
+}
+
+#first-section .fa-cloud {
+	background-color: #3CADD4;
+}
+
+#first-section .fa-desktop {
+	background-color: #ADD43C;
+}
+
+#first-section .fa-rocket {
+	background-color: #D43C61;
+}
+
+// --------- SECOND SECTION -----------
+
+#second-section {
+	text-align: center;
+	box-sizing: border-box;
+	padding-left: 5em;
+	padding-right: 5em;
+}
+
+#second-section > div {
+	display: flex;
+	margin: 3.7em 0;
+	padding: 3.8em 0 3em;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+
+#second-section aside {
+	flex: 1;
+	text-align: left;
+}
+
+#second-section aside > img {
+	float: left;
+	border-radius: 10em;
+	margin-right: 1em;
+}
+
+#second-section div aside > p {
+	margin: 0 0 .5em;
+}
+
+#second-section-paragraph {
+	font-weight: 900;
+	color: black;
+	padding-top: 1.1em;
+}
+
+#second-section-bottom-p {
+	margin: 0 13em 3em;
+	line-height: 1.6em;	
+}
+
+
+// ------------ CONTACT SECTION --------------
+
+#contact-section {
+	background-color: $blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container {
+	width: 50%;
+}
+
+.container > h2, .container > span {
+	color: white;
+}
+
+.container {
+	text-align: center;
+}
+
+.container > input {
+	width: 42%;
+	margin: 4em 1em 2em;
+	height: 2.6em;
+	padding-left: .8em;
+}
+
+.container > textarea {
+	width: 89%;
+	height: 11em;
+	font-family: sans-serif;
+	padding: .5em 0 0 .8em;
+}
+
+.container > input, .container > textarea {
+	font-size: .96em;
+	box-sizing: border-box;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+}
+
+.container button {
+	background-color: $purple;
+	margin-top: 1.5em;
+}
+
+// ------------ FOOTER SECTION ------------
+
+footer {
+	background-color: $purple;
+	padding: 5.7em 0 5em;
+}
+
+footer h3 {
+	color: white;
+	margin-bottom: 1.5em;
+}
+
+footer ul > li, footer li > a {
+	color: lightgrey;
+}
+
+footer div {
+	width: 90%;
+	margin: 0 auto;
+}
+
+footer div:first-of-type {
+	border-bottom: 1px solid grey;
+	padding-bottom: 2em;
+	margin-bottom: 4em;
+	display: flex;
+	justify-content: space-between;
+}
+
+footer div:first-of-type ul li{
+	margin: 1.1em 0;
+}
+
+footer div:last-of-type {
+	display: flex;
+	justify-content: space-between;
+}
+
+footer div:last-of-type aside {
+	display: block;
+}
+
+footer #footer-list {
+	display: flex;
+	margin-top: .5em;
+}
+
+footer div:last-of-type a > i {
+	color: white;
+	font-size: 1.2em;
+	width: 2em;
+	height: 2em;
+	line-height: 2em;
+	border-radius: 10em;
+	text-align: center;
+	margin-left: .7em;
+}
+
+footer .fa-facebook {
+	background-color: #39599F;
+}
+
+footer .fa-twitter {
+	background-color: #2DAAE4;
+}
+
+footer .fa-google-plus {
+	background-color: #C91E1F;
+}
+
+footer .fa-linkedin {
+	background-color: #31516A;
+}
