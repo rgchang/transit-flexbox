@@ -1,3 +1,4 @@
+@import url(http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css);
 body {
   margin: 0;
 }
@@ -2592,6 +2593,7 @@ h2 {
 
 p {
   font-size: .94em;
+  line-height: 1.6em;
 }
 
 header {
@@ -2689,6 +2691,9 @@ header button {
   border-radius: 3px;
   box-shadow: 0 0 1px grey;
   background-color: white;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -2705,9 +2710,9 @@ header button {
   height: 3.1em;
   border-radius: 10em;
   font-size: 2.4em;
+  color: white;
   line-height: 3.1em;
   margin-bottom: .6em;
-  color: white;
 }
 
 #first-section .fa-cloud {
@@ -2723,36 +2728,44 @@ header button {
 }
 
 #second-section {
-  text-align: center;
   box-sizing: border-box;
-  padding-left: 5em;
-  padding-right: 5em;
-}
-
-#second-section > div {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#second-section > aside {
+  width: 89%;
+  margin: 0 auto;
   margin: 3.7em 0;
   padding: 3.8em 0 3em;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-#second-section aside {
+#second-section div {
   -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   text-align: left;
 }
 
-#second-section aside > img {
+#second-section div > img {
   float: left;
   border-radius: 10em;
   margin-right: 1em;
 }
 
-#second-section div aside > p {
+#second-section aside div > p {
   margin: 0 0 .5em;
 }
 
@@ -2763,8 +2776,8 @@ header button {
 }
 
 #second-section-bottom-p {
-  margin: 0 13em 3em;
-  line-height: 1.6em;
+  text-align: center;
+  margin: 0 20% 3em;
 }
 
 #contact-section {
@@ -2840,14 +2853,14 @@ footer div {
 
 footer div:first-of-type {
   border-bottom: 1px solid grey;
+  padding-bottom: 2em;
+  margin-bottom: 4em;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-bottom: 2em;
-  margin-bottom: 4em;
 }
 
 footer div:first-of-type ul li {
