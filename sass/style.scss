@@ -49,6 +49,7 @@ h2 {
 
 p {
 	font-size: .94em;
+	line-height: 1.6em;	
 }
 
 // ------------ HEADER NAV --------------
@@ -142,7 +143,7 @@ header button {
 	box-shadow: 0 0 1px grey;
 	background-color: white;
 
-
+	flex: 1;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -173,32 +174,34 @@ header button {
 // --------- SECOND SECTION -----------
 
 #second-section {
-	text-align: center;
 	box-sizing: border-box;
-	padding-left: 5em;
-	padding-right: 5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-#second-section > div {
-	display: flex;
+#second-section > aside {
+	width: 89%;
+	margin: 0 auto;
 	margin: 3.7em 0;
 	padding: 3.8em 0 3em;
 	border-top: 1px solid lightgrey;
 	border-bottom: 1px solid lightgrey;
+	display: flex;
 }
 
-#second-section aside {
+#second-section div {
 	flex: 1;
 	text-align: left;
 }
 
-#second-section aside > img {
+#second-section div > img {
 	float: left;
 	border-radius: 10em;
 	margin-right: 1em;
 }
 
-#second-section div aside > p {
+#second-section aside div > p {
 	margin: 0 0 .5em;
 }
 
@@ -209,8 +212,8 @@ header button {
 }
 
 #second-section-bottom-p {
-	margin: 0 13em 3em;
-	line-height: 1.6em;	
+	text-align: center;
+	margin: 0 20% 3em;
 }
 
 
